@@ -44,8 +44,6 @@ app.post('/upload', (req, res, next) => {
         console.log(err);
     });
 
-    /////////////////////////////////
-
     const path = require('path')
     const oldpath = files.csvFile.path
     const newpath = path.join(__dirname, '..', 'file', files.csvFile.name)
